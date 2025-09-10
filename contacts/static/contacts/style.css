@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    background: #fff;
+    padding: 40px 35px 25px 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    max-width: 700px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #22223b;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+form label {
+    font-weight: 600;
+    color: #495057;
+}
+
+input.form-control {
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #b6d0e2;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #f7fafd;
+}
+
+input.form-control:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 0 2px #a5b4fc;
+}
+
+/* Apenas a classe do botão registrar contato */
+.btn-success {
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #1f3ccc 0%, #fc5c7d 100%);
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(106,130,251,0.08);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    opacity: 0.95;
+}
+
+.btn-success:hover {
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+    box-shadow: 0 4px 16px rgba(106,130,251,0.13);
+    opacity: 1;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.table {
+    background: #f8fafd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.table th {
+    background: #4e54c8;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.table td {
+    vertical-align: middle !important;
+    border-top: 1px solid #e3e6f0;
+}
+
+.btn-primary, .btn-danger {
+    width: 100px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #ff5858 0%, #ffae70 100%);
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #ffae70 0%, #ff5858 100%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 18px 5px 10px 5px;
+        max-width: 98vw;
+    }
+    .btn-primary, .btn-danger {
+        width: 80px;
+        font-size: 0.95em;
+    }
+}
